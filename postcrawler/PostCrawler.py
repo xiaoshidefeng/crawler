@@ -1,4 +1,4 @@
-import re
+﻿import re
 import urllib.request
 
 import pymysql
@@ -51,7 +51,7 @@ if __name__ == "__main__":
     webheader = {
               'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) '                            'Chrome/51.0.2704.63 Safari/537.36'
            }
-    while pagenum<92700:
+    while pagenum<=92700:
         newpage = initial_page + str(pagenum)
         req = urllib.request.Request(url=newpage, headers=webheader)
         webPage = urllib.request.urlopen(req)
